@@ -8,10 +8,40 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <script src="~/scripts/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+
+            $.ajax({
+                url: '/api/EmployeeApi',
+                method: 'get',
+                success: function (data) {
+                    debugger;
+                    $.each(data, function (key, value) {
+
+                        $('#grList').append("<tr><td>" + value.TeamName + "</td></tr>");
+                    });
+                },
+                error: function (error) {
+
+                }
+
+            });
+        });
+    </script>
 </head>
 <body>
     <div>
-        
+        <table>
+            <thead>
+                <tr>
+                    <th>Team Name</th>
+                </tr>
+            </thead>
+            <tbody id="grList">
+
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
