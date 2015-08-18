@@ -15,7 +15,7 @@ namespace RestfullAPI.Test
             EmployeeApiController employeeApiController = new EmployeeApiController();
             List<Team> result = employeeApiController.GetTeamList();
 
-            Assert.IsNotNull(result);
+          
             Assert.IsTrue(result.Count>0);
           
         }
@@ -26,7 +26,7 @@ namespace RestfullAPI.Test
             EmployeeApiController employeeApiController = new EmployeeApiController();
             List<Team> result = employeeApiController.GetTeamList();
 
-            Assert.IsNull(result);
+            Assert.IsNotNull(result);
         }
     }
 }
