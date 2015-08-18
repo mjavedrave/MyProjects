@@ -11,7 +11,7 @@ namespace RestfullAPI.Controllers
     public class EmployeeApiController : ApiController
     {
         // GET api/employeeapi
-        public IEnumerable<Team> GetTeamList()
+        public List<Team> GetTeamList()
         {
             List<Team> lstTeam = new List<Team>();
 

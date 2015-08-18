@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestfullAPI", "RestfullAPI\RestfullAPI.csproj", "{68842BC6-99C1-4C69-8ABF-B0EC3E084666}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestfullAPI.Test", "RestfullAPI.Test\RestfullAPI.Test.csproj", "{FAB47605-BB8E-49A5-A48F-26E70DF5CDD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{68842BC6-99C1-4C69-8ABF-B0EC3E084666}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68842BC6-99C1-4C69-8ABF-B0EC3E084666}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68842BC6-99C1-4C69-8ABF-B0EC3E084666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAB47605-BB8E-49A5-A48F-26E70DF5CDD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAB47605-BB8E-49A5-A48F-26E70DF5CDD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAB47605-BB8E-49A5-A48F-26E70DF5CDD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAB47605-BB8E-49A5-A48F-26E70DF5CDD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
