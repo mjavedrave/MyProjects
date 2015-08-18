@@ -19,5 +19,14 @@ namespace RestfullAPI.Test
             Assert.IsTrue(result.Count>0);
           
         }
+
+        [TestMethod]
+        public void TestMethod2()
+        {
+            EmployeeApiController employeeApiController = new EmployeeApiController();
+            List<Team> result = employeeApiController.GetTeamList();
+
+            Assert.IsNull(result);
+        }
     }
 }
