@@ -10,10 +10,11 @@ namespace RestfullAPI.Controllers
 {
     public class EmployeeApiController : ApiController
     {
+        private List<Team> lstTeam = new List<Team>();
+
         // GET api/employeeapi
         public List<Team> GetTeamList()
         {
-            List<Team> lstTeam = new List<Team>();
 
             Team team = new Team();
             team.TeamID = 1;
@@ -28,6 +29,15 @@ namespace RestfullAPI.Controllers
             team.TeamName = "IET TV";
             lstTeam.Add(team);
             return lstTeam;
+        }
+
+        // Put api/employeeapi/add
+        public void Add(String name)
+        {
+            Team team = new Team();
+            team.TeamID = lstTeam.Count;
+            team.TeamName = name;
+            lstTeam.Add(team);
         }
 
         // GET api/employeeapi/5
